@@ -1,7 +1,8 @@
-function arrSum(arr1, arr2) {
-    const sum = arr1.map((num, idx) => num + arr2[idx]);
-    const totalSum = sum.reduce((acc, curr) => acc + curr, 0);
-    return totalSum;
+
+
+export function arrSum(arr1, arr2) {
+   
+    return [...arr1, ...arr2].reduce((acc, curr) => acc + curr, 0);
 }
 
 console.log(arrSum([1, 2, 3], [4, 5, 6])); // 21
